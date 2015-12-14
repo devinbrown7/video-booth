@@ -1,0 +1,30 @@
+.screen {
+  height: 480px;
+  width: 800px;
+  border: 1px solid #777;
+}
+
+.timer {
+  min-height: 100px;
+  text-align: center;
+}
+.timer>p {
+  font-size: 60px;
+}
+.button {
+  text-align: center;
+}
+.button span {
+  display: block;
+  font-size: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.video {
+  min-height: 300px;
+  background-color: green
+}
+
+.centered {
+  text-align: center;
+}
