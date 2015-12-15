@@ -1,25 +1,45 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
+      <img src="/images/celebration_logo.png" alt="" />
+      <br>
+    </div>
+    <div class="col-md-8">
+      <h2 class="page-title"><em>Celebration Cinema</em> Video Booth</h2>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
       <div class="row">
         <div class="col-md-12">
           <div class="timer">
-            <p>10 seconds</p>
+            <p class="timer-value">10</p>
+            <p class="timer-label">SECONDS</p>
+            <br>
           </div>
         </div>
         <div class="col-md-12">
-          <div class="button">
-            <div class="btn-lg btn-danger btn-block">
-              <span>Start</span>
+          <div class="button" >
+            <div class="btn-lg btn-danger btn-block start-button">
+              <span>START</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
       <div class="video">
-        Video
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <br><br>
+      <p class="notice">
+        NOTICE: Use of "Video Booth" grants Celebration Cinema the permission to use any video for marketing purposes.
+      </p>
+    </div>
+  </div>
+  <%= erb :email_modal %>
 </div>
