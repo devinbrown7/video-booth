@@ -19,3 +19,5 @@ require 'sinatra/twitter-bootstrap'
 # Load app
 require "video_booth"
 run VideoBooth
+
+require "models/user"
