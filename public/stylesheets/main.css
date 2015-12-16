@@ -10,36 +10,95 @@
   padding-top: 15px;
   width: 800px;
 }
+.button:hover {
+  cursor: pointer;
+}
 .modal {
   color: #000;
-  height: 480px;
+  min-height: 480px;
   width: 800px;
+}
+.modal-dialog {
+  margin-bottom: 75%;
+}
+.modal-email-list>.input-group {
+  margin-top: 5px;
+}
+.input-group-addon {
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 30px;
+  font-weight: 300;
 }
 .page-title {
   font-weight: 400;
   text-align: center;
 }
 .timer {
-  text-align: center;
 }
 .timer-value {
+  text-align: center;
   font-size: 120px;
-  line-height: 90px;
+  line-height: 150px;
   margin: 0;
 }
 .timer-label {
+  text-align: center;
   font-size:50px;
-  /*line-height: 100px;*/
+  line-height: 150px;
   margin: 0;
 }
-.button {
-  text-align: center;
+.shooting-mode {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-.button span {
+.video-length-container {
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.mode-title {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 18px;
+}
+.start-button {
+  text-align: center;
   display: block;
-  font-size: 60px;
+  font-size: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.recording-button {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.recording-dot {
+  background-color: red;
+  border-radius: 15px;
+  height: 32px;
+  width: 32px;
+  display: block;
+  float: left;
+}
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+  -webkit-animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
 }
 .video {
   min-height: 300px;

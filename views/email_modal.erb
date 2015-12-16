@@ -1,32 +1,26 @@
-<div class="modal fade" id="email-modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog">
+<div class="modal" id="email-modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-        <div class="row">
-          <div class="col-xs-6">
-            <h2 class="modal-title">Get the Video</h2>
-            <h4>Enter your email address(es) to have the video sent to you!</h4>
-          </div>
-          <div class="col-xs-6">
-            <button type="button" class="btn btn-primary btn-block btn-lg email-modal-send-button">Send Video</button>
-            <br>
-            <button type="button" class="btn btn-danger btn-block btn-sm " data-dismiss="modal">Delete</button>
+      <form class="email-form" method="post">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+          <div class="row">
+            <div class="col-xs-6">
+              <h2 class="modal-title">Get the Video</h2>
+              <h4>Enter your email address(es) to have the video sent to you!</h4>
+            </div>
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-primary btn-block btn-lg email-modal-send-button">Send Video</button>
+              <button type="button" class="btn btn-danger btn-block btn " data-dismiss="modal">Delete</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-body">
-        <p>*We do not store any email addresses given to use through this form</p>
-        <form class="email_form" action="/send" method="post">
-          <div class="form-group">
-            <label for="email-input">Email address(es)</label>
-            <textarea type="email" class="form-control" id="email-input" rows="3"></textarea>
-          </div>
-        </form>
-
-      </div>
-      <!-- <div class="modal-footer">
-      </div> -->
+        <div class="modal-body">
+          <!-- <p>*We do not store any email addresses entered here</p> -->
+            <div class="form-group modal-email-list">
+            </div>
+        </div>
+      </form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

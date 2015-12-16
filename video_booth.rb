@@ -28,15 +28,23 @@ class VideoBooth < Sinatra::Base
     { :video_name => "video_name_string" }.to_json
   end
 
-  get "/send" do
+  post "/send" do
 
-    # get email address(es)
-    # get video name
+    video_file = ""
+    email_addresses = []
+
+    params.each do |param, value|
+      if param.include? 'email_input_'
+        email_addresses.push value
+      elsif param == 'video_file'
+        video_file = value
+      end
+    end
 
     # send email(s)
 
     content_type :json
-    { :video_name => "video_name_string" }.to_json
+    { :status => "success" }.to_json
   end
 
 end
