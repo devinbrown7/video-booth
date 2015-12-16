@@ -15,6 +15,7 @@ end
 
 require 'sinatra/base'
 require 'sinatra/twitter-bootstrap'
+require 'json'
 
 # Load app
 require "video_booth"
